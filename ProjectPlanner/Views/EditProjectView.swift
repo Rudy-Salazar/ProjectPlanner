@@ -47,7 +47,7 @@ struct EditProjectView: View {
                 DatePicker("Enter due date", selection: $dueDate.onChange(update), in: Date()..., displayedComponents: .date)
             
                 VStack {
-                    DatePicker("Set reminder", selection: $reminderDate.onChange(update), displayedComponents: [.date, .hourAndMinute])
+                    DatePicker("Set reminder", selection: $reminderDate.onChange(update), in: Date()...,  displayedComponents: [.date, .hourAndMinute])
                         .padding(.bottom)
                     
                     Button(action: {
@@ -99,6 +99,20 @@ struct EditProjectView: View {
         }
     }
     
+    class NotificationManager {
+        static let instance = NotificationManager()
+        
+        func requestAuthorization() {
+            let options: UNAuthorizationOptions = [.alert, .sound, .badge]
+            UNUserNotificationCenter.current().requestAuthorization(options: options) { (succes, error) in
+                if let error = error {
+                    print("ERROR: \(error)")
+                } else {
+                    print("SUCCESS")
+                }
+            }
+        }
+    }
 
     func update() {
         project.title = title

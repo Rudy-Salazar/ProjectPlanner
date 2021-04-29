@@ -40,6 +40,7 @@
 		BDC04CFF26253E9400BBDBD7 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = BDC04CFE26253E9400BBDBD7 /* Awards.json */; };
 		BDC8D42225D23F940012B535 /* BiggerProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8D42125D23F940012B535 /* BiggerProgressBarView.swift */; };
 		BDD06EF4262551C0002F2719 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD06EF3262551C0002F2719 /* ProjectTests.swift */; };
+		BDE2A15E2638D87600160324 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2A15D2638D87600160324 /* DevelopmentTests.swift */; };
 		BDF9EE4725DC304F00BA422E /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF9EE4625DC304F00BA422E /* ReminderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		BDC04CFE26253E9400BBDBD7 /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		BDC8D42125D23F940012B535 /* BiggerProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiggerProgressBarView.swift; sourceTree = "<group>"; };
 		BDD06EF3262551C0002F2719 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = SOURCE_ROOT; };
+		BDE2A15D2638D87600160324 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		BDF9EE4625DC304F00BA422E /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,6 +229,7 @@
 		BDC04CEF262263C300BBDBD7 /* ProjectPlannerTests */ = {
 			isa = PBXGroup;
 			children = (
+				BDE2A15D2638D87600160324 /* DevelopmentTests.swift */,
 				BDD06EF3262551C0002F2719 /* ProjectTests.swift */,
 				BD584064262E8505000F82D4 /* AwardTests.swift */,
 				BDC04CF0262263C300BBDBD7 /* ProjectPlannerTests.swift */,
@@ -374,6 +377,7 @@
 				BD584065262E8505000F82D4 /* AwardTests.swift in Sources */,
 				BDC04CF1262263C300BBDBD7 /* ProjectPlannerTests.swift in Sources */,
 				BDD06EF4262551C0002F2719 /* ProjectTests.swift in Sources */,
+				BDE2A15E2638D87600160324 /* DevelopmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
