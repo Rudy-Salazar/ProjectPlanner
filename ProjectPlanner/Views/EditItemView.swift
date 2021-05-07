@@ -16,6 +16,9 @@ struct EditItemView: View {
     @State private var detail: String
     @State private var priority: Int
     @State private var completed: Bool
+    @State private var completedItemCount: Int
+//    @Binding private var completedItemCount: Int
+    
 
     init(item: Item) {
         self.item = item
@@ -24,6 +27,8 @@ struct EditItemView: View {
         _detail = State(wrappedValue: item.itemDetail)
         _priority = State(wrappedValue: Int(item.priority))
         _completed = State(wrappedValue: item.completed)
+        _completedItemCount = State(wrappedValue: Int(item.completedItemCount))
+        
     }
 
     var body: some View {
@@ -45,6 +50,14 @@ struct EditItemView: View {
             Section {
                 Toggle("Mark Completed", isOn: $completed.onChange(update))
             }
+            .onTapGesture {
+                itemCount()
+                update()
+            }
+            
+            VStack {
+                Text("This is the completed item \(completedItemCount)")
+            }
         }
         .navigationTitle("Edit Item")
         .onDisappear(perform: dataController.save)
@@ -52,13 +65,20 @@ struct EditItemView: View {
 
     func update() {
         item.project?.objectWillChange.send()
-
         item.title = title
         item.detail = detail
         item.priority = Int16(priority)
         item.completed = completed
+        item.completedItemCount = Int16(completedItemCount)
+    }
+    
+    func itemCount() {
+        if completed == false {
+            completedItemCount += 1
+        }
     }
 }
+
 
 struct EditItemView_Previews: PreviewProvider {
     static var previews: some View {

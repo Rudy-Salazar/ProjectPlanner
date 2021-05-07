@@ -35,6 +35,13 @@ struct ContentView: View {
                     Image(systemName: "list.bullet")
                     Text("Closed")
                 }
+            
+            CalendarView()
+                .tag(CalendarView.tag)
+                .tabItem {
+                    Image(systemName: "waveform.path.ecg")
+                    Text("Progress")
+                }
 
 //            AwardsView()
 //                .tag(AwardsView.tag)

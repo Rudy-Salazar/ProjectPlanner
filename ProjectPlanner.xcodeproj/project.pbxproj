@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BD0A430625D2193B00CDB0A6 /* IndividualProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A430525D2193B00CDB0A6 /* IndividualProjectView.swift */; };
+		BD4722EC2640FCE10056950A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = BD4722EB2640FCE10056950A /* SwiftUICharts */; };
 		BD584065262E8505000F82D4 /* AwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD584064262E8505000F82D4 /* AwardTests.swift */; };
 		BD69E79625C9024500B84265 /* ProjectPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD69E79525C9024500B84265 /* ProjectPlannerApp.swift */; };
 		BD69E79825C9024500B84265 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD69E79725C9024500B84265 /* ContentView.swift */; };
@@ -41,6 +42,7 @@
 		BDC8D42225D23F940012B535 /* BiggerProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8D42125D23F940012B535 /* BiggerProgressBarView.swift */; };
 		BDD06EF4262551C0002F2719 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD06EF3262551C0002F2719 /* ProjectTests.swift */; };
 		BDE2A15E2638D87600160324 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2A15D2638D87600160324 /* DevelopmentTests.swift */; };
+		BDE2A167263A642500160324 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2A166263A642500160324 /* CalendarView.swift */; };
 		BDF9EE4725DC304F00BA422E /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF9EE4625DC304F00BA422E /* ReminderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +95,7 @@
 		BDC8D42125D23F940012B535 /* BiggerProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiggerProgressBarView.swift; sourceTree = "<group>"; };
 		BDD06EF3262551C0002F2719 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = SOURCE_ROOT; };
 		BDE2A15D2638D87600160324 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
+		BDE2A166263A642500160324 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		BDF9EE4625DC304F00BA422E /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4722EC2640FCE10056950A /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +189,7 @@
 				BD69E7D325C90EE100B84265 /* EditProjectView.swift */,
 				BD0A430525D2193B00CDB0A6 /* IndividualProjectView.swift */,
 				BDF9EE4625DC304F00BA422E /* ReminderView.swift */,
+				BDE2A166263A642500160324 /* CalendarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,6 +260,9 @@
 			dependencies = (
 			);
 			name = ProjectPlanner;
+			packageProductDependencies = (
+				BD4722EB2640FCE10056950A /* SwiftUICharts */,
+			);
 			productName = ProjectPlanner;
 			productReference = BD69E79225C9024500B84265 /* ProjectPlanner.app */;
 			productType = "com.apple.product-type.application";
@@ -304,6 +312,9 @@
 				Base,
 			);
 			mainGroup = BD69E78925C9024500B84265;
+			packageReferences = (
+				BD4722EA2640FCE10056950A /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = BD69E79325C9024500B84265 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -354,6 +365,7 @@
 				BDC8D42225D23F940012B535 /* BiggerProgressBarView.swift in Sources */,
 				BD69E7BF25C90D9E00B84265 /* Binding-OnChange.swift in Sources */,
 				BD69E7B625C90CCF00B84265 /* Award.swift in Sources */,
+				BDE2A167263A642500160324 /* CalendarView.swift in Sources */,
 				BD69E7BC25C90D7500B84265 /* EditItemView.swift in Sources */,
 				BD69E7DD25C912D400B84265 /* WelcomeView.swift in Sources */,
 				BDF9EE4725DC304F00BA422E /* ReminderView.swift in Sources */,
@@ -623,6 +635,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD4722EA2640FCE10056950A /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD4722EB2640FCE10056950A /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD4722EA2640FCE10056950A /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BD69E7A525C9036100B84265 /* Main.xcdatamodeld */ = {

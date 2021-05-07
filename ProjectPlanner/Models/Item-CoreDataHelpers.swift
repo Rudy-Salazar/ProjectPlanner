@@ -23,6 +23,10 @@ extension Item {
     var itemCreationDate: Date {
         creationDate ?? Date()
     }
+    
+    var itemCompletedCount: Int16 {
+        completedItemCount ?? 0
+    }
 
     static var example: Item {
         let controller = DataController.preview
