@@ -36,11 +36,11 @@ struct ContentView: View {
                     Text("Closed")
                 }
             
-            CalendarView()
-                .tag(CalendarView.tag)
+            CalView()
+                .tag(CalView.tag)
                 .tabItem {
-                    Image(systemName: "waveform.path.ecg")
-                    Text("Progress")
+                    Image(systemName: "calendar")
+                    Text("Calendar")
                 }
 
 //            AwardsView()
@@ -52,6 +52,7 @@ struct ContentView: View {
         }
         .sheet(isPresented: $isWelcomeScreenShowing) {
             WelcomeView(isWelcomeScreenShowing: $isWelcomeScreenShowing)
+               
         }
     }
 }

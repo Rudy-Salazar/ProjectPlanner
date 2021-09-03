@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BD0A430625D2193B00CDB0A6 /* IndividualProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A430525D2193B00CDB0A6 /* IndividualProjectView.swift */; };
+		BD34D3E1265C9C4F0018E3F3 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = BD34D3E0265C9C4F0018E3F3 /* HorizonCalendar */; };
+		BD34D3E4265F63BD0018E3F3 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = BD34D3E3265F63BD0018E3F3 /* FSCalendar */; };
 		BD4722EC2640FCE10056950A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = BD4722EB2640FCE10056950A /* SwiftUICharts */; };
 		BD584065262E8505000F82D4 /* AwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD584064262E8505000F82D4 /* AwardTests.swift */; };
 		BD69E79625C9024500B84265 /* ProjectPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD69E79525C9024500B84265 /* ProjectPlannerApp.swift */; };
@@ -42,7 +44,7 @@
 		BDC8D42225D23F940012B535 /* BiggerProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8D42125D23F940012B535 /* BiggerProgressBarView.swift */; };
 		BDD06EF4262551C0002F2719 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD06EF3262551C0002F2719 /* ProjectTests.swift */; };
 		BDE2A15E2638D87600160324 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2A15D2638D87600160324 /* DevelopmentTests.swift */; };
-		BDE2A167263A642500160324 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2A166263A642500160324 /* CalendarView.swift */; };
+		BDE2A167263A642500160324 /* CalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2A166263A642500160324 /* CalView.swift */; };
 		BDF9EE4725DC304F00BA422E /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF9EE4625DC304F00BA422E /* ReminderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,7 +97,7 @@
 		BDC8D42125D23F940012B535 /* BiggerProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiggerProgressBarView.swift; sourceTree = "<group>"; };
 		BDD06EF3262551C0002F2719 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = SOURCE_ROOT; };
 		BDE2A15D2638D87600160324 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
-		BDE2A166263A642500160324 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		BDE2A166263A642500160324 /* CalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalView.swift; sourceTree = "<group>"; };
 		BDF9EE4625DC304F00BA422E /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD34D3E1265C9C4F0018E3F3 /* HorizonCalendar in Frameworks */,
+				BD34D3E4265F63BD0018E3F3 /* FSCalendar in Frameworks */,
 				BD4722EC2640FCE10056950A /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,7 +193,7 @@
 				BD69E7D325C90EE100B84265 /* EditProjectView.swift */,
 				BD0A430525D2193B00CDB0A6 /* IndividualProjectView.swift */,
 				BDF9EE4625DC304F00BA422E /* ReminderView.swift */,
-				BDE2A166263A642500160324 /* CalendarView.swift */,
+				BDE2A166263A642500160324 /* CalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,6 +266,8 @@
 			name = ProjectPlanner;
 			packageProductDependencies = (
 				BD4722EB2640FCE10056950A /* SwiftUICharts */,
+				BD34D3E0265C9C4F0018E3F3 /* HorizonCalendar */,
+				BD34D3E3265F63BD0018E3F3 /* FSCalendar */,
 			);
 			productName = ProjectPlanner;
 			productReference = BD69E79225C9024500B84265 /* ProjectPlanner.app */;
@@ -314,6 +320,8 @@
 			mainGroup = BD69E78925C9024500B84265;
 			packageReferences = (
 				BD4722EA2640FCE10056950A /* XCRemoteSwiftPackageReference "ChartView" */,
+				BD34D3DF265C9C4F0018E3F3 /* XCRemoteSwiftPackageReference "HorizonCalendar" */,
+				BD34D3E2265F63BD0018E3F3 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = BD69E79325C9024500B84265 /* Products */;
 			projectDirPath = "";
@@ -365,7 +373,7 @@
 				BDC8D42225D23F940012B535 /* BiggerProgressBarView.swift in Sources */,
 				BD69E7BF25C90D9E00B84265 /* Binding-OnChange.swift in Sources */,
 				BD69E7B625C90CCF00B84265 /* Award.swift in Sources */,
-				BDE2A167263A642500160324 /* CalendarView.swift in Sources */,
+				BDE2A167263A642500160324 /* CalView.swift in Sources */,
 				BD69E7BC25C90D7500B84265 /* EditItemView.swift in Sources */,
 				BD69E7DD25C912D400B84265 /* WelcomeView.swift in Sources */,
 				BDF9EE4725DC304F00BA422E /* ReminderView.swift in Sources */,
@@ -525,6 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectPlanner/Preview Content\"";
 				DEVELOPMENT_TEAM = FDNHBVQBHR;
@@ -537,6 +546,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Rodolfo-Salazar.ProjectPlanner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -547,6 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectPlanner/Preview Content\"";
 				DEVELOPMENT_TEAM = FDNHBVQBHR;
@@ -559,6 +570,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Rodolfo-Salazar.ProjectPlanner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -637,6 +649,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BD34D3DF265C9C4F0018E3F3 /* XCRemoteSwiftPackageReference "HorizonCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/HorizonCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.3;
+			};
+		};
+		BD34D3E2265F63BD0018E3F3 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.2;
+			};
+		};
 		BD4722EA2640FCE10056950A /* XCRemoteSwiftPackageReference "ChartView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppPear/ChartView.git";
@@ -648,6 +676,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BD34D3E0265C9C4F0018E3F3 /* HorizonCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD34D3DF265C9C4F0018E3F3 /* XCRemoteSwiftPackageReference "HorizonCalendar" */;
+			productName = HorizonCalendar;
+		};
+		BD34D3E3265F63BD0018E3F3 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD34D3E2265F63BD0018E3F3 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
 		BD4722EB2640FCE10056950A /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BD4722EA2640FCE10056950A /* XCRemoteSwiftPackageReference "ChartView" */;

@@ -72,6 +72,7 @@ class DataController: ObservableObject {
             project.title = "Project \(projectCounter)"
             project.items = []
             project.creationDate = Date()
+            project.dueDate = Date()
             project.closed = Bool.random()
 
             for itemCounter in 1...10 {
